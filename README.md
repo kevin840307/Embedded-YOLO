@@ -45,7 +45,9 @@
  > - python pre_processe.py --convert yolo2mask --path ./bdd100k_ivslab/train/ --save_path ./mask_bdd100k_ivslab/val/
 
 ### 2. train
+***Teacher and Student***
  > - python train.py
+ > - train_distillation.py
 
 ### 3. inference(Competition format)
  > - python test.py --data ivslab.yaml --img 448 --conf 0.03 --iou 0.5 --weights embedded_yolo.pt --batch 4 --task test
