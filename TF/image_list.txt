@@ -1,0 +1,2 @@
+D:\Jupyter\Embedded YOLO\bdd100k_ivslab\test\images\itp_1.jpg
+D:\Jupyter\Embedded YOLO\bdd100k_ivslab\test\images\itp_2.jpg

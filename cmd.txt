@@ -1,0 +1,13 @@
+python pre_processe.py --convert ivs2yolo --path ./ivslab/ivslab_train/JPEGImages/All --save_path ./bdd100k_ivslab/train/ 
+
+python pre_processe_fixed.py --convert bdd2yolo --path ./bdd100k --save_path ./bdd100k_ivslab/train/ --mode train
+
+python pre_processe_fixed.py --convert fixedbdd2yolo --path ./bdd100k --save_path ./bdd100k_ivslab/train/ --mode train
+
+python pre_processe.py --convert yolo2mask --path ./bdd100k_ivslab/train/ --save_path ./mask_bdd100k_ivslab/val/
+
+
+
+
+python pytorch_convert_tf.py --model_path ./embedded_yolo.pt --param_path ./embedded_yolo.dict --save_path ./TF --type 1
+
