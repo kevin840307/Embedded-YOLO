@@ -58,6 +58,17 @@
 2. ***inference(Competition format)***
  > - cd ./TF
  > - python run_detection.py ./image_list.txt ./submission.csv
+ 
+ 
+## Only inference using Tensorflow1.13.2
+### requirements
+> - numpy
+> - opencv-python
+> - tensorflow==1.13.2
+> 
+### inference(Competition format)
+ > - cd ./TF
+ > - python run_detection.py ./image_list.txt ./submission.csv
 
 # Reference
 1. [YOLOv5](https://github.com/ultralytics/yolov5)
