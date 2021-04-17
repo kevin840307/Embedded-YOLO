@@ -31,7 +31,7 @@
 
 ## Step
 ### 1. pre-process
-*** Convert ivslab Dataset to YOLO ***
+***Convert ivslab Dataset to YOLO***
  > - python pre_processe.py --convert ivs2yolo --path ./ivslab/ivslab_train/JPEGImages/All --save_path ./bdd100k_ivslab/train/ 
  > 
 ***Convert bdd100k Dataset to YOLO***
