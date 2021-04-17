@@ -30,32 +30,31 @@
 [ALL Weights](https://drive.google.com/drive/folders/1qc982u2V7_uSptziKbcjbyxwLTJsGEbh?usp=sharing)
 
 ## Step
-1. ***pre-process***
-
- > ***Convert ivslab Dataset to YOLO***
+### 1. pre-process
+*** Convert ivslab Dataset to YOLO ***
  > - python pre_processe.py --convert ivs2yolo --path ./ivslab/ivslab_train/JPEGImages/All --save_path ./bdd100k_ivslab/train/ 
  > 
- > ***Convert bdd100k Dataset to YOLO***
+***Convert bdd100k Dataset to YOLO***
  > - python pre_processe_fixed.py --convert bdd2yolo --path ./bdd100k --save_path ./bdd100k_ivslab/train/ --mode train
  > 
- > ***Label conversion to ivas data and convert to YOLO***
+***Label conversion to ivas data and convert to YOLO***
  > - python pre_processe_fixed.py --convert fixedbdd2yolo --path ./bdd100k --save_path ./bdd100k_ivslab/train/ --mode train
  > ![bddconvertivs](https://user-images.githubusercontent.com/64062370/115118123-69b0a700-9fd4-11eb-9fad-2f272b9dcc3a.jpg)
  > 
- > ***Generate mask dataset***
+***Generate mask dataset***
  > - python pre_processe.py --convert yolo2mask --path ./bdd100k_ivslab/train/ --save_path ./mask_bdd100k_ivslab/val/
 
-2. ***train***
+### 2. train
  > - python train.py
 
-3. ***inference(Competition format)***
+### 3. inference(Competition format)
  > - python test.py --data ivslab.yaml --img 448 --conf 0.03 --iou 0.5 --weights embedded_yolo.pt --batch 4 --task test
 
 ## Convert Model to Tensorflow1.13.2
-1. ***convert***
+### 1. convert
  > - python pytorch_convert_tf.py --model_path ./embedded_yolo.pt --param_path ./embedded_yolo.dict --save_path ./TF --type 1 # type: 1 is float16, other is float32
  > 
-2. ***inference(Competition format)***
+### 2. inference(Competition format)
  > - cd ./TF
  > - python run_detection.py ./image_list.txt ./submission.csv
  
