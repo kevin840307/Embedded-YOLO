@@ -17,5 +17,7 @@ python run_detection.py {image_list path} {submission.csv path}
 
 # Detection Example:
 python run_detection.py ./ ./ #(image_list.txt、submission.csv)
+
 python run_detection.py ./image_list.txt ./submission.csv
+
 python run_detection.py ./image_list.txt ./ans.csv
