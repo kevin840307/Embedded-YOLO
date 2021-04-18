@@ -47,7 +47,7 @@
 ### 2. train
 ***Teacher and Student***
  > - python train.py
- > - train_distillation.py
+ > - python train_distillation.py
 
 ### 3. inference(Competition format)
  > - python test.py --data ivslab.yaml --img 448 --conf 0.03 --iou 0.5 --weights embedded_yolo.pt --batch 4 --task test
