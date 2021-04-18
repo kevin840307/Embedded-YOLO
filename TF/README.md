@@ -1,4 +1,5 @@
-# Directory Structure:
+# Directory file:
+
 -model:SaveModel
 
 -run_detection.py:inference:input size=[1, 288, 480, 3] output size=[-1, 6]
@@ -9,15 +10,17 @@
 
 -submission.csv:Qualification inference
 
--Frozn_model.pd
+-Frozen_model.pb
 
 
 # Detection:
-python run_detection.py {image_list path} {submission.csv path}
+detection with Frozen_model.pb
+
+> - python run_detection.py {image_list path} {submission.csv path}
 
 # Detection Example:
-python run_detection.py ./ ./ #(image_list.txt、submission.csv)
+> - python run_detection.py ./ ./ #(image_list.txt、submission.csv)
 
-python run_detection.py ./image_list.txt ./submission.csv
+> - python run_detection.py ./image_list.txt ./submission.csv
 
-python run_detection.py ./image_list.txt ./ans.csv
+> - python run_detection.py ./image_list.txt ./ans.csv
