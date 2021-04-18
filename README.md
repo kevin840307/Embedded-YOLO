@@ -26,8 +26,30 @@
 |  ----  | ----  | ----  | ----  | ----  | ----  | ----  |
 | [YOLOv5+DSC_CSP](https://drive.google.com/file/d/12Y5hohyKyxf6lNBvEYWTJB7JnK4Hpf8_/view?usp=sharing) | 9.1 | 4.67M | 5.04  | 0.59 | 0.535 | 0.535 |
 
-## ALL Weights(incude other weights)
+## Dowload ALL Weights(incude other weights)
 [ALL Weights](https://drive.google.com/drive/folders/1qc982u2V7_uSptziKbcjbyxwLTJsGEbh?usp=sharing)
+
+
+## Train Data Directory Example
+### Directory
+
+path(--path):./bdd100k_ivslab/train
+
+label:{path}/labels/
+
+image:{path}/images/
+
+### Data
+
+name:1_40_00.mp4_00001
+
+label format:{name}.txt
+
+image format:{name}.jpg
+
+### Dowload Example Image and Train Data Directory Example
+[image and data directory](https://drive.google.com/file/d/1zkTKg6y2WxntTRacNJ80RIzA92GEK2M7/view?usp=sharing)
+
 
 ## Step
 ### 1. pre-process
